@@ -1,10 +1,11 @@
 import React from 'react';
+import {Link} from 'react-router-dom' ;
 function RegistrationForm(props) {
   return(
         <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
             <form>
                 <div className="form-group text-left">
-                <label htmlFor="exampleInputEmail1">Email address</label>
+                <label htmlFor="exampleInputEmail1">Email </label>
                 <input type="email" 
                        className="form-control" 
                        id="email" 
@@ -29,12 +30,14 @@ function RegistrationForm(props) {
                         placeholder="Confirm Password"
                     />
                 </div>
+                <Link to="/info">
                 <button 
                     type="submit" 
                     className="btn btn-primary"
                 >
                     Register
                 </button>
+                </Link>
             </form>
         </div>
     )
